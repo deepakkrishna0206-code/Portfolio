@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deepak Krishna · Portfolio</title>
+  https://fonts.googleapis.com
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap
+  <style>
+    :root {
+      --bg: #0b1021;
+      --card: #111735;
+      --text: #eaf0ff;
+      --muted: #a9b3d9;
+      --accent: #6aa1ff;
+      --accent-2: #9b7bff;
+      --chip: #1a2249;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, "Source Sans 3", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% 0%, #121a3e 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 24px 80px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    .intro { padding: 28px; }
+    h1 { font-size: 2.2rem; margin: 0 0 8px; letter-spacing: 0.2px; }
+    .subtitle { color: var(--muted); margin-bottom: 14px; }
+    .contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .chip { background: var(--chip); border: 1px solid rgba(255,255,255,0.08); padding: 8px 12px; border-radius: 100px; font-size: 0.9rem; }
+    .about { margin-top: 14px; color: var(--muted); }
+    .section { margin-top: 34px; }
+    .section h2 { font-size: 1.4rem; margin: 0 0 12px; letter-spacing: 0.3px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .list { padding: 18px; }
+    .list ul { margin: 0; padding-left: 18px; }
+    .list li { margin: 8px 0; }
+    .badge { display: inline-block; background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: white; padding: 4px 10px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+    .timeline { padding: 18px; }
+    .role { margin-bottom: 18px; }
+    .role h3 { margin: 0; font-size: 1.05rem; }
+    .role .meta { color: var(--muted); font-size: 0.95rem; }
+    .role ul { margin: 8px 0 0; padding-left: 18px; }
+    footer { margin-top: 40px; color: var(--muted); text-align: center; font-size: 0.9rem; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="card intro">
+        <h1>Deepak Krishna</h1>
+        <div class="subtitle">Senior Engineer · Embedded/System Test</div>
+        <div class="contact">
+          <span class="chip">Tiruvannamalai, Tamil Nadu</span>
+          mailto:deepakkrishna0206@gmail.comdeepakkrishna0206@gmail.com</a>
+          tel:+917022157252+91 70221 57252</a>
+          <span class="badge">ISTQB Advanced Test Manager (2024)</span>
+        </div>
+        <p class="about">I’m looking for a creatively challenging environment where I can grow and contribute as an Embedded Test Engineer and an innovative problem solver.</p>
+      </div>
+      <div class="card list">
+        <h2>Core Skills</h2>
+        <div class="grid-2">
+          <div>
+            <strong>Programming</strong>
+            <ul><li>Python</li></ul>
+            <strong>Operating Systems</strong>
+            <ul><li>macOS</li><li>Windows</li></ul>
+            <strong>Equipment</strong>
+            <ul><li>Oscilloscope</li><li>Function Generator</li><li>Programmable Power Supply</li></ul>
+          </div>
+          <div>
+            <strong>Protocols</strong>
+            <ul><li>CAN, LIN, J1939, UDS</li></ul>
+            <strong>Testing</strong>
+            <ul><li>HIL & SIL (Open/Closed Loop)</li><li>Manual Testing</li></ul>
+            <strong>Tools</strong>
+            <ul>
+              <li>HTE Tester, IBM DOORS, PTC, Rally</li>
+              <li>ECU-Test, CANoe</li>
+              <li>Git, GitHub, Fork</li>
+              <li>Sublime Text 3, VS Code, MS Office, PDM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Highlights -->
+    <section class="section card list">
+      <h2>Experience Highlights</h2>
+      <ul>
+        <li>7+ years in system testing of Body Control Modules and agricultural equipment controllers (HIL & SIL).</li>
+        <li>Executed system testing for Mercedes-Benz BCMs (STAR 2 Gen 2 & STAR 3 Gen 1), ensuring compliance with functional and non-functional safety features; extended coverage with experience-based tests.</li>
+        <li>Created and executed test plans (exploratory, sanity, regression, smoke) to validate software functionality.</li>
+        <li>Managed defect lifecycle: identification, verification, reporting, and resolution tracking.</li>
+        <li>Trained new recruits and interns; reviewed peers’ automation scripts via Git to improve code quality.</li>
+        <li>Developed automated tools with Python & VBA to reduce time and effort; authored Python automation saving ~€20,000/year.</li>
+        <li>Strong knowledge of communication protocols (CAN, J1939, LIN) and diagnostics (IOCTRL, DTC); built traceability matrices linking requirements, test cases, and results.</li>
+        <li>Validated test bench integrity and promptly reported unit malfunctions.</li>
+        <li>Well-versed in Agile Testing, V-Model, SDLC & STLC; hardware testing, failure analysis, environment testing.</li>
+      </ul>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section card timeline">
+      <h2>Work History</h2>
+      <div class="role">
+        <h3>System Test Engineer · Hella India Pvt. Ltd.</h3>
+        <div class="meta">2017 – 2021</div>
+        <ul>
+          <li>Developed & executed test plans and scripts; analyzed BCR and system specifications.</li>
+          <li>Ensured test bench integrity through validation; reported load unit/power supply/measuring unit issues.</li>
+          <li>Analyzed and tested diagnostic functionalities (IOCTRL, DTC) for accurate fault detection/reporting.</li>
+          <li>Maintained traceability matrices linking requirements, test cases, and results.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>Test Automotive Engineer · John Deere India Pvt. Ltd.</h3>
+        <div class="meta">2021 – Present</div>
+        <ul>
+          <li>Executed automated test scripts in Python to reduce manual testing time.</li>
+          <li>Owned the defect lifecycle and collaborated on bug resolution.</li>
+          <li>Reviewed and approved automation scripts via Git for quality and efficiency.</li>
+          <li>Led knowledge sharing for new team members and interns.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section grid-2">
+      <div class="card list">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>B.Tech in Mechatronics</strong> — Adarsh Management Institute (2017–2020)</li>
+          <li><strong>Diploma in Mechatronics</strong> — NTTF (2014–2017)</li>
+          <li><strong>Secondary School Certificate</strong> — Gandhi Nagar Matriculation (2014)</li>
+        </ul>
+      </div>
+      <div class="card list">
+        <h2>Certifications</h2>
+        <ul>
+          <li>ISTQB Foundation Level (2020)</li>
+          <li>ISTQB Test Automotive Engineer (2021)</li>
+          <li>ISTQB Test Analyst (2023)</li>
+          <li>ISTQB Advanced Test Manager (2024)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements & Languages -->
+    <section class="section grid-2">
+      <div class="card list">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Rising Star nominee (2019 & 2020)</li>
+          <li>Hackathon 2023 winner (ISG level)</li>
+          <li>WoW & Star Team of Month awards</li>
+          <li>Filed IP related to large tractors (2023)</li>
+          <li>Python automation tool delivering ~€20,000 annual savings</li>
+        </ul>
+      </div>
+      <div class="card list">
+        <h2>Languages</h2>
+        <ul>
+          <li>English, Tamil, Hindi, Telugu, Kannada, Malayalam, Marathi</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Deepak Krishna · Built with HTML/CSS · Hosted on GitHub Pages
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
