@@ -972,6 +972,10 @@
         margin-left: 3rem !important;
       }
 
+      .company-logo {
+        display: none;
+      }
+
       .mobile-menu-btn {
         display: block;
       }
@@ -990,6 +994,16 @@
 
       .contact-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      .contact-icons-grid {
+        gap: 2rem;
+      }
+
+      .contact-icon-link::after {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        min-width: 180px;
       }
     }
 
@@ -1021,11 +1035,6 @@
         grid-template-columns: 1fr;
       }
 
-      .hire-stats {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -1036,6 +1045,52 @@
 
       .cert-grid {
         grid-template-columns: 1fr;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .section-header p {
+        font-size: 1rem;
+      }
+
+      .timeline-item {
+        margin-left: 2rem !important;
+      }
+
+      .timeline::before {
+        left: 10px;
+      }
+
+      .contact-icons-grid {
+        gap: 1.5rem;
+      }
+
+      .contact-icon-link {
+        width: 70px;
+        height: 70px;
+      }
+
+      .contact-logo {
+        width: 35px;
+        height: 35px;
+      }
+
+      .contact-icon-link::after {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.8rem;
+        min-width: 160px;
+        bottom: -60px;
+      }
+
+      .badge {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+      }
+
+      .nav-container {
+        padding: 0 1rem;
       }
     }
 
