@@ -497,8 +497,8 @@
 
     .company-logo {
       position: absolute;
-      max-width: 120px;
-      max-height: 80px;
+      max-width: 150px;
+      max-height: 100px;
       width: auto;
       height: auto;
       object-fit: contain;
@@ -508,19 +508,26 @@
       cursor: default;
     }
 
+    /* BMW logo larger size */
+    .timeline-item:nth-child(1) .company-logo {
+      max-width: 300px;
+      max-height: 240px;
+      right: -360px !important;
+    }
+
     .company-logo:hover {
       transform: scale(1.1);
       z-index: 20;
     }
 
     .timeline-item:nth-child(odd) .company-logo {
-      right: -145px;
+      right: -170px;
       top: 50%;
       transform: translateY(-50%);
     }
 
     .timeline-item:nth-child(even) .company-logo {
-      left: -180px;
+      left: -200px;
       top: 50%;
       transform: translateY(-50%);
     }
@@ -531,14 +538,6 @@
 
     .timeline-item:nth-child(even) .company-logo:hover {
       transform: translateY(-50%) scale(1.1);
-    }
-
-    .timeline-item:nth-child(odd) .company-logo:nth-of-type(2) {
-      right: -280px;
-    }
-
-    .timeline-item:nth-child(even) .company-logo:nth-of-type(2) {
-      left: -280px;
     }
 
     .timeline-date {
@@ -1223,7 +1222,6 @@
         <div class="timeline-item">
           <div class="timeline-content">
             <img src="bmw-logo.png.png?v=2" alt="BMW Logo" class="company-logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 fill=%22%23F0F9FF%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2232%22 fill=%22%233B82F6%22 font-weight=%22bold%22%3EBMW%3C/text%3E%3C/svg%3E'">
-            <img src="bmw-logo-2.png.png?v=2" alt="BMW Logo 2" class="company-logo" onerror="this.style.display='none'">
             <div class="timeline-date">March 2025 – Present</div>
             <h3>BMW Techworks India Pvt Ltd</h3>
             <h4>Automotive Test Engineer</h4>
